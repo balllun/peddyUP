@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-catalog="pedigree" match-name="bank" />
+	<table-filter match-catalog="pedigree" match-name="color" />
+	<table-filter match-catalog="pedigree" match-name="data" />
+	<table-filter match-catalog="pedigree" match-name="logo" />
+	<table-filter match-catalog="pedigree" match-name="pedigree" />
+	<table-filter match-catalog="pedigree" match-name="pedigree_type" />
+	<table-filter match-catalog="pedigree" match-name="privilege" />
+	<table-filter match-catalog="pedigree" match-name="report" />
+	<table-filter match-catalog="pedigree" match-name="users" />
+</hibernate-reverse-engineering>

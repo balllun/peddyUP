@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="">
+
+		<mapping class="com.spring.model.Bank" />
+		<mapping class="com.spring.model.Report" />
+		<mapping class="com.spring.model.Users" />
+		<mapping class="com.spring.model.Data" />
+		<mapping class="com.spring.model.Color" />
+		<mapping class="com.spring.model.Pedigree" />
+		<mapping class="com.spring.model.Privilege" />
+		<mapping class="com.spring.model.PedigreeType" />
+
+	</session-factory>
+</hibernate-configuration>
