@@ -87,6 +87,10 @@
 			</sec:authorize>
 			
 			<sec:authorize access="hasRole('Admin')">
+				<li><a class="nav-link" href="contact">สมาคม</a></li>
+			</sec:authorize>
+			
+			<sec:authorize access="hasRole('Admin')">
 				<li><a class="nav-link" href="ped">ออกtagเบอร์หู</a></li>
 			</sec:authorize>
 			
@@ -210,29 +214,35 @@
 		<br>
 	
 			<!-- <div class="container"> -->
-	<div class="row">
-		<div class="col-sm-offset-1 col-sm-10">
-			<table class="table table-bordered" style="color:#404040">
+	<div class="table-responsive">	
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10">
 
-				<thead >
-					<tr class="success" style="color:#000000">
-						<th ><center>No.</center></th>
-						<th><center>Name</center></th>
-						<th><center>Private No.</center></th>
-						<th><center>BFA No.</center></th>
-						<th><center>Owner</center></th>
-						<th><center>Band</center></th>
-						<th><center>Sex</center></th>
-						<th><center>View</center></th>
-						<!-- <th><center>Print</center></th> -->
-					<sec:authorize access="hasRole('Admin')">	<th><center>Delete</center></th></sec:authorize>
-					</tr>
-				</thead>
-				<tbody id="listSearch">
+					<table class="table table-bordered" style="color:#404040">
 
-				</tbody>
-			</table>
+						<thead >
+						<tr class="success" style="color:#000000">
+							<th ><center>No.</center></th>
+							<th><center>Name</center></th>
+							<th><center>Private No.</center></th>
+							<th><center>BFA No.</center></th>
+							<th><center>Owner</center></th>
+							<th><center>Band</center></th>
+							<th><center>Sex</center></th>
+							<th><center>View</center></th>
+							<!-- <th><center>Print</center></th> -->
+							<sec:authorize access="hasRole('Admin')">	<th><center>Delete</center></th></sec:authorize>
+						</tr>
+						</thead>
+						<tbody id="listSearch">
+
+						</tbody>
+					</table>
+				</div>
+			</div>
 		</div>
+
 	</div>
 	<!-- 	</div> -->
 			

@@ -153,10 +153,10 @@
 						<form:input path="sex" type="text" class="form-control"
 							disabled="disabled" />
 					</fieldset>
-					<%-- <form:select class="form-control" type="text" path="sex" disabled="disabled"  >
+					<<form:select class="form-control" type="text" path="sex" disabled="disabled"  >
 						<option value="Bull">Bull</option>
 						<option value="Cow">Cow</option>
-					</form:select> --%>
+					</form:select> 
 				</div>
 			</div>
 
@@ -167,7 +167,7 @@
 					<select class="form-control" id="color" name="color"
 						disabled="disabled">
 						<c:forEach items="${colorList}" var="color">
-							<option value="${color.id}"
+							<option> value="${color.id}"
 								<c:if test="${color == pedigree.color}">selected="selected"</c:if>>${color.name}</option>
 						</c:forEach>
 					</select>

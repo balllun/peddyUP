@@ -4,8 +4,8 @@
 <!DOCTYPE html >
 <html>
 <head>
-
- 
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
     
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport"
@@ -198,6 +198,31 @@
 
 
 </head>
+<script type="text/javascript">
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img1').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader2 = new FileReader();
+
+                reader2.onload = function (e) {
+                    $('#img2').attr('src', e.target.result);
+                }
+
+                reader2.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
 <header>
 	<nav class="navbar navbar-default navbar-custom" role="navigation">
 		<div class="container">
@@ -225,6 +250,10 @@
 					<sec:authorize access="hasRole('Admin')">
 				<li ><a class="nav-link" href="AllReport">ออกรายงาน</a></li>
 			</sec:authorize> 
+			
+				<sec:authorize access="hasRole('Admin')">
+				<li><a class="nav-link" href="contact">สมาคม</a></li>
+			</sec:authorize>
 			
 			<sec:authorize access="hasRole('Admin')">
 				<li><a class="nav-link" href="ped">ออกtagเบอร์หู</a></li>
@@ -308,6 +337,8 @@
                         <div class="row form-group ">
                             <div class="col-md-6 ">
                                 <fieldset><br>
+                                
+
 
 
                                     
@@ -323,9 +354,10 @@
 					<form:select id="sel1" onchange="selectis(this)"
 						class="form-control" path="pedigreeType.id"
 						items="${pedigreeTypeList}" />
-
 				</div>
 			</div>
+			
+			
 
 
 			<div class="form-group">
@@ -431,6 +463,16 @@
 					<form:input class="form-control" type="date" path="calved" />
 				</div>
 			</div>
+			
+
+
+
+
+
+
+
+      
+
 		</form:form>
 		<div class="panel panel-default" style="color:#0000FF">
 			<div class="panel-body">
@@ -862,6 +904,14 @@
 			</div>
 		</div>
 
+
+
+
+
+
+
+
+
 		<div class="container">
 			<div class="row form-groups">
 				<center>
@@ -890,7 +940,6 @@
 
 
 	</div>
-                                          
 
 
 
@@ -902,6 +951,47 @@
 
 
                             </div>
+                            
+                            
+                            
+                            
+<div  align="right">
+<div class="col-md-3" >
+	<div class="row from-group">
+		<div >
+			<a>
+				<form id="form1" runat="server">
+					<img id="img1" src="#"  style="height: 100px"alt="your image" />
+						<input type='file' onchange="readURL( this);" />
+				</form>
+			</a>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="row from-group">
+		<div >
+			<a>
+				<form id="form2" runat="server">
+					<img id="img2" src="#" width="300" alt="your image" />
+					
+						<input type='file' onchange="readURL(this);"  />
+					
+				</form>
+			</a>
+		</div>
+	</div>
+	
+	
+	
+
+</div>
+</div>
+                            
+                            
+                            
+                            
 
                         </div>
 
@@ -915,6 +1005,7 @@
 	<br>
 	<br>
 	<br>
+	
 	<footer class="footer">
 		<div class="container">
 		<div class="col-md-6" align="left">

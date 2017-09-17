@@ -133,6 +133,10 @@
 			</sec:authorize> 
 			
 			<sec:authorize access="hasRole('Admin')">
+				<li><a class="nav-link" href="Detail">สมาคม</a></li>
+			</sec:authorize>
+			
+			<sec:authorize access="hasRole('Admin')">
 				<li class="active"><a class="nav-link current" href="ped">ออกtagเบอร์หู</a></li>
 			</sec:authorize>
 			
@@ -272,13 +276,9 @@
 
                                     <select id="pagelist" class="form-control" style="width: 150px">
                                         <option value="" class="btn btn-default dropdown-toggle" type="button" id="pagelist1" data-toggle="dropdown">กรุณาเลือก</option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">5</a></option>
-                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">6</a></option>
-                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">7</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เชียงราย</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">พะเยา</a></option>
+                                        
                                     </select>
 
                                         </div>
@@ -294,13 +294,26 @@
 
                                     <select id="pagelist" class="form-control" style="width: 150px">
                                         <option value="" class="btn btn-default dropdown-toggle" type="button" id="pagelist1" data-toggle="dropdown">กรุณาเลือก</option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">5</a></option>
-                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">6</a></option>
-                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">7</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เชียงแสน</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เชียงของ</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เทิง</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เมืองเชียงราย</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เวียงเชียงรุ้ง</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เวียงแก่น</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เวียงชัย</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">เวียงป่าเป้า</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">แม่จัน</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">แม่ฟ้าหลวง</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">แม่ลาว</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">แม่สรวย</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">แม่สาย</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ขุนตาล</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ดอยหลวง</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ป่าแดด</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">พญาเม็งราย</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">พาน</a></option>
+                                        
+                                        
                                     </select>
 
                                         </div>
@@ -313,13 +326,18 @@
 
                                     <select id="pagelist" class="form-control" style="width: 150px">
                                         <option value="" class="btn btn-default dropdown-toggle" type="button" id="pagelist1" data-toggle="dropdown">กรุณาเลือก</option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">4</a></option>
-                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">5</a></option>
-                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">6</a></option>
-                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">7</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลปงน้อย</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลหนองป่าก่อ</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลโชคชัย</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลดงมหาวัน</a></option>
+                                        <option value="firstOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลทุ่งก่อ</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลป่าซาง</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลต้า</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลต้า</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลต้า</a></option>
+                                        v<option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลต้า</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลต้า</a></option>
+                                        <option value="secondOption" role="presentation"><a role="menuitem" tabindex="-1" href="#">ตำบลต้า</a></option>
                                     </select>
 
                                         </div>
@@ -384,7 +402,7 @@
 		 <div class="col-md-6">
 			<div >
 				<a>
-					<img id="imgfooter" align="right" src="<c:url value="/resources/img/00.png" /> " height="600" >
+					<img id="imgfooter" width="100%" style="height: auto" align="right" src="<c:url value="/resources/img/00.png" /> "  height="600" >
 				</a> 
 			</div>
 		</div>

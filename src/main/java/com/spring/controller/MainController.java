@@ -589,22 +589,24 @@ public class MainController {
 		return "listDetail2";
 	}
 	
-	   @RequestMapping(value = "/ped",method =  RequestMethod.GET)
-	    public String ped (Map<String,Object>model)   {
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   return "ped";}
+	@RequestMapping(value = "/contact",method =  RequestMethod.GET)
+    public String contact (Map<String,Object>model)   {   
+	   return "contact";}
+	
+	@RequestMapping(value = "/chacked",method =  RequestMethod.GET)
+    public String chackde (Map<String,Object>model)   {   
+	   return "chacked";}
 	
 	
 	
+	@RequestMapping(value = "/ped",method =  RequestMethod.GET)
+    public String ped (Map<String,Object>model)   {   
+	   return "ped";}
+	   
+	   
+	
+
+	   
 //แสดงหน้าการค้นหาโค
 	@RequestMapping(value = "Search")
 	public String setupForm(Map<String, Object> map) {
@@ -701,6 +703,20 @@ public class MainController {
 		return "../pages/listSearch2";
 	}
 	
+	
+	@SuppressWarnings("unchecked")
+	@RequestMapping(value = "lsearch3")
+	public String listSearch3(@RequestParam("id") int id, @RequestParam("value") String value, Map<String, Object> map) {
+		Pedigree pedigree =new Pedigree();
+		if (id == 1) {
+			pedigree.setCName(value);
+			map.put("pedigreeList", pedigreeService.getAllPedigree(pedigree));
+		}else if (id == 0) {
+			map.put("pedigreeList", pedigreeService.getAllPedigree());
+		}
+		
+		return "../pages/listSearch3";
+	}
 	
 	//แสดงหน้ารายละเอียดการออกใบพันธุ์ประวัติ
 	@SuppressWarnings("unchecked")

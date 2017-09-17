@@ -5,7 +5,7 @@
 <html>
 <head>
 
-<title>Home</title>
+<title>chackde</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport"
 	content="initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -119,8 +119,8 @@
 	</div>
 	<div class="collapse navbar-collapse">
 		<ul class="nav navbar-nav navbar-left">
-			<li class="active"><a class="nav-link current" href="#">หน้าแรก</a></li>
-			<sec:authorize access="hasRole('Admin')">
+			<%-- <li> <a class="active" href="#">หน้าแรก</a></li> --%>
+			<sec:authorize access="hasRole('Admin')"> 
 				<li><a class="nav-link" href="record">บันทึกข้อมูลโค</a></li>
 			</sec:authorize>
 			<sec:authorize access="hasAnyRole('Admin','User')">
@@ -208,23 +208,10 @@
 </nav> </header>
 <body>
 	
+
 	
 	
-	  <div class="container">
-        <c:if test="${sessionScope.privilege == null}">
-            <img width="100%" style="height: auto" src="<c:url value=  "/resources/img/Logo1.png"/> "
-                 height="400px"> <br>
-            <div>
-                <h1 class="homepage-title">Pedigree Record and Search System</h1>
-            </div>
-            <%--<div>--%>
-                <%--<h3 class="homepage-subtitle">Farm Management System : Pedigree Record and Search System</h3>--%>
-            <%--</div>--%>
-        </c:if>
-    </div>
-	
-	
-	
+	sfggdfhgdfhdgjdfhfshsf
 	
 	
 	

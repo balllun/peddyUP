@@ -8,6 +8,9 @@
 		<td class="text-center">${pedigree.CName}</td>
 		<td class="text-center">${pedigree.privateNo}</td>
 		<td class="text-center">${pedigree.bbfaNo}</td>
+		
+		
+		
 			<%-- 	<td class="text-center">${pedigree.ownerName}</td>
 		<td class="text-center">${pedigree.band}</td>
 		<td class="text-center">${pedigree.sex}</td>

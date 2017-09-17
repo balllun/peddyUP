@@ -15,6 +15,7 @@
 					class="btn btn-info">
 					<i class="fa fa-search"></i>View
 				</button></a></td>
+		
 		<%-- <td class="text-center"><a href="Print=${pedigree.id}" target="_blank"><button
 					class="btn btn-success">
 					<i class="fa fa-print"></i>&nbsp;Print

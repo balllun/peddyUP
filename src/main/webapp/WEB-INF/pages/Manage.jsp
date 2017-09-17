@@ -138,6 +138,11 @@
 					<li ><a class="nav-link"
 						href="AllReport">ออกรายงาน</a></li>
 				</sec:authorize>
+				
+				<sec:authorize access="hasRole('Admin')">
+				<li><a class="nav-link" href="contact">สมาคม</a></li>
+			</sec:authorize>
+			
 				<sec:authorize access="hasRole('Admin')">
 				<li><a class="nav-link" href="ped">ออกtagเบอร์หู</a></li>
 			</sec:authorize>
@@ -272,7 +277,7 @@
 							<form:form commandName="data" class="form-horizontal" role="form">
 							<select class="form-control" id=privilege name="privilege" disabled="disabled">
 								<c:forEach items="${privilegeList}" var="privilege">
-									<option value="${privilege.id}"
+									<option> value="${privilege.id}"
 										<c:if test="${privilege == data.users.privilege}">selected="selected"</c:if>>${privilege.status}</option>
 								</c:forEach>
 							</select>

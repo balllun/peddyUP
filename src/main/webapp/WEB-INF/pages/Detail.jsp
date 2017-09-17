@@ -141,6 +141,11 @@
 					<li><a class="nav-link"
 						href="AllReport">ออกรายงาน</a></li>
 				</sec:authorize>
+				
+				<sec:authorize access="hasRole('Admin')">
+				<li><a class="nav-link" href="contact">สมาคม</a></li>
+			</sec:authorize>
+			
 				<sec:authorize access="hasRole('Admin')">
 				<li><a class="nav-link" href="ped">ออกtagเบอร์หู</a></li>
 			</sec:authorize>
@@ -240,7 +245,7 @@
 					</div>
 				</div>
 		<br>
-
+		<div class="table-responsive">	
 		<div class="container" >
 			<div class="row">
 				<div class="col-sm-12">
@@ -269,6 +274,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<div class="container">

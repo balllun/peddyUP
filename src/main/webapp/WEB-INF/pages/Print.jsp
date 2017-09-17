@@ -135,6 +135,11 @@
 			<sec:authorize access="hasRole('Admin')">
 				<li><a class="nav-link" href="AllReport">ออกรายงาน</a></li>
 			</sec:authorize> 
+			
+			<sec:authorize access="hasRole('Admin')">
+				<li><a class="nav-link" href="contact">สมาคม</a></li>
+			</sec:authorize>
+			
 			<sec:authorize access="hasRole('Admin')">
 				<li><a class="nav-link" href="ped">ออกtegเบอร์หู</a></li>
 			</sec:authorize>
@@ -218,14 +223,14 @@
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="pwd">Select Bank</label>
 						<div class="col-sm-3">
-							<!-- <select class="form-control" id="sel1">
+							<select class="form-control" id="sel1">
 								<option>ธนาคารกรุงไทย</option>
 								<option>ธนาคารไทยพาณิชย์</option>
-							</select> -->
+							</select> 
 								<form:form commandName="babk" class="form-horizontal" role="form">
 							<select class="form-control" id="bank" name="bank">
 								<c:forEach items="${bankList}" var="bank">
-									<option value="${bank.id}"
+									<option> value="${bank.id}"
 										<c:if test="${bank == bank}">selected="selected"</c:if>>${bank.name}</option>
 								</c:forEach>
 							</select>

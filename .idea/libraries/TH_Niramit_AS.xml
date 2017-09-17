@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TH-Niramit-AS">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/TH-Niramit-AS.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
